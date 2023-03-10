@@ -1,18 +1,18 @@
 import React from "react";
 import "./home.scss";
-import Social from './Social';
+import Social from "./Social";
 import Data from "./Data";
 
 const Home = () => {
   return (
     <section className="home section" id="home">
-        <div className="home_container container grid">
-            <div className="home_content grid">
-              <Social />
-              <div className="home_img"></div>
-              <Data />
-            </div>
+      <div className="container grid">
+        <div className="content grid">
+          <Social />
+          <div className="img"></div>
+          <Data />
         </div>
+      </div>
     </section>
   );
 };
