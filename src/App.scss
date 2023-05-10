@@ -181,8 +181,16 @@ img {
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-  .section {
-    padding: 2rem 0 4rem;
+  .body {
+    margin: 0 0 $header-height 0;
+
+    .section {
+      padding: 2rem 0 4rem;
+
+      .section_subtitle {
+        margin-bottom: $mb-3;
+      }
+    }
   }
 }
 
