@@ -9,7 +9,7 @@ const Data = () => {
         </h1>
         <h3 className="subtitle">Front-end Developer</h3>
         <p className="description">Based in Vancouver</p>
-        <a href="#contact" className='button button-flex'>Say Hello</a>
+        <a href="#contact" className='button button--flex hello-btn'>Say Hello</a>
     </div>
   )
 }

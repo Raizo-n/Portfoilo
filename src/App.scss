@@ -1,3 +1,32 @@
+// ======================================= //
+// Media Query
+$lg: 992px; // For large device
+$md-l: 768px; // For medium large device
+$md: 576px; // For medium device
+$sm: 360px; // For small device
+
+@mixin lg {
+  @media (max-width: ($lg)) {
+    @content;
+  }
+}
+@mixin md-l {
+  @media (max-width: ($md-l)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: ($md)) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: ($sm)) {
+    @content;
+  }
+}
+
+// ======================================= //
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
@@ -137,6 +166,11 @@ img {
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
+
+  @include lg {
+    margin-left: $mb-1-5;
+    margin-right: $mb-1-5;
+  }
 }
 
 .grid {
@@ -210,30 +244,3 @@ img {
   }
 }
 
-// ======================================= //
-// Media Query
-$lg: 992px; // For large device
-$md-l: 768px; // For medium large device
-$md: 576px;  // For medium device
-$sm: 360px;  // For small device
-
-@mixin lg {
-  @media (max-width: ($lg)) {
-    @content;
-  }
-}
-@mixin md-l {
-  @media (max-width: ($md-l)) {
-    @content;
-  }
-}
-@mixin md {
-  @media (max-width: ($md)) {
-    @content;
-  }
-}
-@mixin sm {
-  @media (max-width: ($sm)) {
-    @content;
-  }
-}
