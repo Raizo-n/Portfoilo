@@ -8,41 +8,41 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="nav_logo">
+        <a href="index.html" className="logo">
           Raizo
         </a>
-        <div className={Toggle ? "nav_menu show-menu" : "nav_menu"}>
-          <ul className="nav_list grid">
-            <li className="nav_item">
-              <a href="#home" className="nav_link">
-                <i className="uil uil-estate nav_icon active-link"></i> Home
+        <div className={Toggle ? "menu show-menu" : "menu"}>
+          <ul className="list grid">
+            <li className="item">
+              <a href="#home" className="link">
+                <i className="uil uil-estate icon active-link"></i> Home
               </a>
             </li>
-            <li className="nav_item">
-              <a href="#about" className="nav_link">
-                <i className="uil uil-user nav_icon"></i> About
+            <li className="item">
+              <a href="#about" className="link">
+                <i className="uil uil-user icon"></i> About
               </a>
             </li>
-            <li className="nav_item">
-              <a href="#skills" className="nav_link">
-                <i className="uil uil-file nav_icon"></i> Skills
+            <li className="item">
+              <a href="#skills" className="link">
+                <i className="uil uil-file icon"></i> Skills
               </a>
             </li>
-            <li className="nav_item">
-              <a href="#portfolio" className="nav_link">
-                <i className="uil uil-scenery nav_icon"></i> Portfolio
+            <li className="item">
+              <a href="#portfolio" className="link">
+                <i className="uil uil-scenery icon"></i> Portfolio
               </a>
             </li>
-            <li className="nav_item">
-              <a href="#contact" className="nav_link">
-                <i className="uil uil-message nav_icon"></i> Contact
+            <li className="item">
+              <a href="#contact" className="link">
+                <i className="uil uil-message icon"></i> Contact
               </a>
             </li>
           </ul>
-          <i class="uil uil-times nav_close" onClick={() => showMenu(!Toggle)}></i>
+          <i class="uil uil-times close" onClick={() => showMenu(!Toggle)}></i>
         </div>
 
-        <div className="nav_toggle" onClick={() => showMenu(!Toggle)}>
+        <div className="toggle" onClick={() => showMenu(!Toggle)}>
           <i class="uil uil-apps"></i>
         </div>
       </nav>
