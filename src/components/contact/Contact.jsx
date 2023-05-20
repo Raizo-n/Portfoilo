@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./contact.scss";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_ghq1jet",
+      "template_zv02znj",
+      form.current,
+      "iTfWHqC5n9kQCdzDd"
+    );
+    e.target.reset();
+  };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section_title">Get in Touch</h2>
@@ -11,13 +26,15 @@ const Contact = () => {
         <div className="content">
           <h3 className="title">Talk to me</h3>
           <div className="info">
-
             {/* Email */}
             <div className="card">
               <i className="bx bx-mail-send icon"></i>
-              <h3 className="formtitle">Email</h3>
+              <h3 className="form-title">Email</h3>
               <span className="data">raizonakada@gmail.com</span>
-              <a href="mailto:raizonakada@gmail.com.com" className="contact-button">
+              <a
+                href="mailto:raizonakada@gmail.com.com"
+                className="contact-button"
+              >
                 Write me <i className="bx bx-right-arrow-alt button-icon"></i>
               </a>
             </div>
@@ -25,7 +42,7 @@ const Contact = () => {
             {/* Whatsapp */}
             <div className="card">
               <i className="bx bxl-whatsapp icon"></i>
-              <h3 className="formtitle">Whatsapp</h3>
+              <h3 className="form-title">Whatsapp</h3>
               <span className="data">604-657-4679</span>
               <a href="" className="contact-button">
                 Write me <i className="bx bx-right-arrow-alt button-icon"></i>
@@ -35,7 +52,7 @@ const Contact = () => {
         </div>
         <div className="content">
           <h3 className="title">Write me your project</h3>
-          <form action="" className="form">
+          <form ref={form} onSubmit={sendEmail} action="" className="form">
             <div className="div">
               <label className="tag">Name</label>
               <input
@@ -64,9 +81,7 @@ const Contact = () => {
                 rows="10"
               ></textarea>
             </div>
-            <button className="button button-flex">
-              Send Message
-            </button>
+            <button className="button button-flex">Send Message</button>
           </form>
         </div>
       </div>

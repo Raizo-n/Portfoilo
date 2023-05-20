@@ -6,6 +6,15 @@
   column-gap: 6rem;
   padding-bottom: 3rem;
 
+  @include lg {
+    column-gap: 3rem;
+  }
+
+  @include md-l {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
   .title {
     text-align: center;
     font-size: $h3-font-size;
@@ -17,6 +26,10 @@
     display: grid;
     row-gap: 1rem;
     grid-template-columns: 300px;
+
+    @include md-l {
+        justify-content: center;
+    }
 
     .card {
       background-color: $container-color;
@@ -64,6 +77,14 @@
 
   .form {
     width: 360px;
+
+    @include md-l {
+        margin: 0 auto;
+    }
+
+    @include sm {
+        width: 100%;
+    }
 
     .div {
       position: relative;
