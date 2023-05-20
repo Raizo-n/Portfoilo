@@ -1,0 +1,54 @@
+@import "../../App.scss";
+
+.skills_container {
+  grid-template-columns: repeat(2, 350px);
+  column-gap: 3rem;
+  justify-content: center;
+
+  .content {
+    background-color: $container-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+
+    .title {
+      font-size: $normal-font-size;
+      font-weight: $font-medium;
+      text-align: center;
+      margin-bottom: $mb-1-5;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      column-gap: 2.5rem;
+
+      .group {
+        display: grid;
+        align-items: flex-start;
+        row-gap: 1rem;
+
+        .data {
+          display: flex;
+          column-gap: 0.5rem;
+
+          .bx-badge-check {
+            font-size: 1rem;
+            color: $title-color;
+          }
+
+          .name {
+            font-size: $normal-font-size;
+            font-weight: $font-medium;
+            line-height: 18px;
+          }
+
+          .level {
+            font-size: $tiny-font-size;
+            
+          }
+        }
+      }
+    }
+  }
+}

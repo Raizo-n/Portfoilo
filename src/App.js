@@ -4,7 +4,7 @@ import "./App.scss";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
-import Skills from "./skills/Skills";
+import Skills from "./components/skills/Skills";
 
 const App = () => {
   return (
