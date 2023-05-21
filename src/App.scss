@@ -216,22 +216,22 @@ $md: 576px;  // For medium device
 $sm: 360px;  // For small device
 
 @mixin lg {
-  @media (max-width: ($pc)) {
+  @media (max-width: ($lg)) {
     @content;
   }
 }
 @mixin md-l {
-  @media (max-width: ($tab)) {
+  @media (max-width: ($md-l)) {
     @content;
   }
 }
 @mixin md {
-  @media (max-width: ($tab)) {
+  @media (max-width: ($md)) {
     @content;
   }
 }
-@mixin sp {
-  @media (max-width: ($sp)) {
+@mixin sm {
+  @media (max-width: ($sm)) {
     @content;
   }
 }
