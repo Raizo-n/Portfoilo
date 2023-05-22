@@ -1,68 +1,108 @@
 @import "../../App.scss";
 
 .contact-container {
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;
-    column-gap: 6rem;
-    padding-bottom: 3rem;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  column-gap: 6rem;
+  padding-bottom: 3rem;
 
-    .title {
-        text-align: center;
-        font-size: $h3-font-size;
+  .title {
+    text-align: center;
+    font-size: $h3-font-size;
+    font-weight: $font-medium;
+    margin-bottom: $mb-1-5;
+  }
+
+  .info {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 300px;
+
+    .card {
+      background-color: $container-color;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      border-radius: 0.75rem;
+      text-align: center;
+
+      .icon {
+        font-size: 2rem;
+        color: $title-color;
+        margin-bottom: $mb-0-25;
+      }
+
+      .form-title {
         font-weight: $font-medium;
-        margin-bottom: $mb-1-5;
-    }
+        font-size: $small-font-size;
+      }
 
-    .info {
-        display: grid;
-        row-gap: 1rem;
-        grid-template-columns: 300px;
+      .data {
+        display: block;
+        margin-bottom: $mb-0-75;
+        font-size: $small-font-size;
+      }
 
-        .card {
-            background-color: $container-color;
-            border: 1px solid rgba(0,0,0,.1);
-            padding: 1rem;
-            border-radius: .75rem;
-            text-align: center;
+      .contact-button {
+        color: $text-color;
+        font-size: $small-font-size;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        column-gap: 0.25rem;
 
-            .icon {
-                font-size: 2rem;
-                color: $title-color;
-                margin-bottom: $mb-0-25;
-            }
-
-            .form-title {
-                font-weight: $font-medium;
-                font-size: $small-font-size;
-            }
-
-            .data {
-                display: block;
-                margin-bottom: $mb-0-75;
-                font-size: $small-font-size;
-            }
-
-            .contact-button {
-                color: $text-color;
-                font-size: $small-font-size;
-                align-items: center;
-                display: inline-flex;
-                justify-content: center;
-                column-gap: 0.25rem;
-
-                &:hover  .button-icon{
-                    transform: translate(0.25rem);
-                }
-
-                .button-icon {
-                    font-size: 1rem;
-                    transition: 0.3s;
-                }
-            }
+        &:hover .button-icon {
+          transform: translate(0.25rem);
         }
+
+        .button-icon {
+          font-size: 1rem;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  .form {
+    width: 360px;
+
+    .div {
+      position: relative;
+      margin-bottom: $mb-2;
+      height: 4rem;
+
+      .tag {
+        position: absolute;
+        top: -0.75rem;
+        left: 1.25rem;
+        font-size: $smaller-font-size;
+        padding: 0.25rem;
+        background-color: $body-color;
+        z-index: 10;
+      }
+
+      .input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        color: $text-color;
+        outline: none;
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        z-index: 1;
+      }
     }
 
-    .form {
-        width: 360px;
+    .form-area {
+      height: 11rem;
+
+      textarea {
+        resize: none;
+      }
     }
+  }
 }
+
+

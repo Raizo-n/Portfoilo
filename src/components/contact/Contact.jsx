@@ -54,7 +54,7 @@ const Contact = () => {
                 placeholder="Type your Email address"
               />
             </div>
-            <div className="div">
+            <div className="div form-area">
               <label className="tag">Project</label>
               <textarea
                 name="project"
