@@ -208,3 +208,30 @@ img {
     margin-right: $mb-1;
   }
 }
+
+// Media Query
+$lg: 992px; // For large device
+$md-l: 768px; // For medium large device
+$md: 576px;  // For medium device
+$sm: 360px;  // For small device
+
+@mixin lg {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin md-l {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
