@@ -20,7 +20,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <span className="copy">&#169; Raizo Nakada All rights reserved</span>
+        <span className="copy">&#169; Raizo Nakada 2023 All rights reserved</span>
       </div>
     </footer>
   );
