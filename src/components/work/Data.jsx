@@ -12,7 +12,7 @@ export const projectData = [
     {
         id: 2,
         image: Work2,
-        title: 'Web design',
+        title: 'Social App',
     },
     {
         id: 3,
