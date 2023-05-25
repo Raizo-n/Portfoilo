@@ -112,6 +112,10 @@ textarea {
 body {
   background-color: $body-color;
   color: $text-color;
+
+  @include md-l {
+    margin: 0 0 $header-height 0;
+  }
 }
 
 h1,
@@ -143,6 +147,10 @@ img {
 /* Reusable CSS Classes */
 .section {
   padding: 6rem 0 2rem;
+
+  @include md-l {
+    padding: 2rem 0 4rem;
+  }
 }
 
 .section_title {
@@ -154,6 +162,10 @@ img {
   display: block;
   font-size: $small-font-size;
   margin-bottom: 4rem;
+
+  @include md-l {
+    margin-bottom: $mb-3;
+  }
 }
 
 .section_title,
@@ -171,6 +183,11 @@ img {
     margin-left: $mb-1-5;
     margin-right: $mb-1-5;
   }
+
+  @include sm {
+    margin-left: $mb-1;
+    margin-right: $mb-1;
+  }
 }
 
 .grid {
@@ -186,6 +203,10 @@ img {
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: $font-medium;
+
+  @include lg {
+    padding: 1rem 1.75rem;
+  }
 }
 
 .button:hover {
@@ -201,46 +222,50 @@ img {
   align-items: center;
 }
 
-/* BreakPoints */
-/* For large devices */
-@media screen and (max-width: 992px) {
-  .container {
-    margin-left: $mb-1-5;
-    margin-right: $mb-1-5;
+// :root {
+//   $big-font-size: 2.25rem;
+// }
 
-    .button {
-      padding: 1rem 1.75rem;
-    }
-  }
-}
 
-/* For medium devices */
-@media screen and (max-width: 768px) {
-  .body {
-    margin: 0 0 $header-height 0;
+// /* BreakPoints */
+// /* For large devices */
+// @media screen and (max-width: 992px) {
+//   .container {
+//     margin-left: $mb-1-5;
+//     margin-right: $mb-1-5;
 
-    .section {
-      padding: 2rem 0 4rem;
+//     .button {
+//       padding: 1rem 1.75rem;
+//     }
+//   }
+// }
 
-      .section_subtitle {
-        margin-bottom: $mb-3;
-      }
-    }
-  }
-}
+// /* For medium devices */
+// @media screen and (max-width: 768px) {
+//   .body {
+//     margin: 0 0 $header-height 0;
 
-@media screen and (max-width: 576px) {
-}
+//     .section {
+//       padding: 2rem 0 4rem;
 
-/* For small devices */
-@media screen and (max-width: 360px) {
-  :root {
-    $big-font-size: 2.25rem;
-  }
+//       .section_subtitle {
+//         margin-bottom: $mb-3;
+//       }
+//     }
+//   }
+// }
 
-  .container {
-    margin-left: $mb-1;
-    margin-right: $mb-1;
-  }
-}
+// @media screen and (max-width: 576px) {
+// }
 
+// /* For small devices */
+// @media screen and (max-width: 360px) {
+//   :root {
+//     $big-font-size: 2.25rem;
+//   }
+
+//   .container {
+//     margin-left: $mb-1;
+//     margin-right: $mb-1;
+//   }
+// }
