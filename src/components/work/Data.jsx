@@ -1,3 +1,8 @@
+import Work1 from '../../assets/Screenshot (62).png';
+import Work2 from '../../assets/Screenshot (62).png';
+import Work3 from '../../assets/Screenshot (62).png';
+import Work4 from '../../assets/Screenshot (62).png';
+
 export const projectData = [
     {
         id: 1,

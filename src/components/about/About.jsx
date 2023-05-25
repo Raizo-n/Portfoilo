@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.scss";
-import AboutImg from "../../assets/profileimg.jpg";
+import AboutImg from "../../assets/MyImg.jpg";
 import Info from "./Info";
 // import CV from '../../assets/'
 
