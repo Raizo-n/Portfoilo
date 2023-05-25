@@ -24,21 +24,31 @@
       padding: 1.25rem;
       border-radius: 1rem;
 
+      &:hover .img {
+        transition: 0.6s ease;
+        transform: scale(1.1);
+      }
+
       @include lg {
         padding: 1rem;
       }
 
-      .img {
+      .img-box {
         width: 295px;
-        border-radius: 1rem;
-        margin-bottom: $mb-1;
+        overflow: hidden;
 
-        @include lg {
-          margin-bottom: 0.75rem;
-        }
-
-        @include md {
+        .img {
           width: 100%;
+          border-radius: 1rem;
+          margin-bottom: $mb-1;
+
+          @include lg {
+            margin-bottom: 0.75rem;
+          }
+
+          @include md {
+            width: 100%;
+          }
         }
       }
 
