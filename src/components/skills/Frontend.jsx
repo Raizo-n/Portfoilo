@@ -32,7 +32,7 @@ const Frontend = () => {
           <div className="data">
             <i class="bx bx-badge-check"></i>
             <div>
-              <h3 className="name">React</h3>
+              <h3  className="name">React</h3>
               <span className="level">Basic</span>
             </div>
           </div>

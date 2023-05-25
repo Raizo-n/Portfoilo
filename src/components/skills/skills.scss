@@ -5,11 +5,24 @@
   column-gap: 3rem;
   justify-content: center;
 
+  @include lg {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+
+  @include md {
+    grid-template-columns: 1fr;
+  }
+
   .content {
     background-color: $container-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
+
+    @include md {
+      padding: 1.5rem;
+    }
 
     .title {
       font-size: $normal-font-size;
@@ -22,6 +35,10 @@
       display: flex;
       justify-content: center;
       column-gap: 2.5rem;
+
+      @include sm {
+        column-gap: 1.25rem;
+      }
 
       .group {
         display: grid;
@@ -43,9 +60,12 @@
             line-height: 18px;
           }
 
+          @include sm {
+            font-size: $small-font-size;
+          }
+
           .level {
             font-size: $tiny-font-size;
-
           }
         }
       }
@@ -53,32 +73,32 @@
   }
 }
 
-// For large devices
-@media screen and (max-width: 992px) {
-    .skills_container {
-        grid-template-columns: max-content;
-        row-gap: 2rem;
-    }
-  }
+// // For large devices
+// @media screen and (max-width: 992px) {
+//   .skills_container {
+//     grid-template-columns: max-content;
+//     row-gap: 2rem;
+//   }
+// }
 
-/* For medium devices */
-@media screen and (max-width: 576px) {
-    .skills_container {
-        grid-template-columns: 1fr;
+// /* For medium devices */
+// @media screen and (max-width: 576px) {
+//   .skills_container {
+//     grid-template-columns: 1fr;
 
-        .content {
-            padding: 1.5rem;
-        }
-    }
-  }
+//     .content {
+//       padding: 1.5rem;
+//     }
+//   }
+// }
 
-  /* For small devices */
-  @media screen and (max-width: 360px) {
-    .box {
-        column-gap: 1.25rem;
+// /* For small devices */
+// @media screen and (max-width: 360px) {
+//   .box {
+//     column-gap: 1.25rem;
 
-        .name {
-            font-size: $small-font-size;
-        }
-    }
-  }
+//     .name {
+//       font-size: $small-font-size;
+//     }
+//   }
+// }
