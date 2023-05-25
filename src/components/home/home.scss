@@ -1,143 +1,136 @@
 @import "../../App.scss";
 
 .home {
-  .container {
-    // @include lg {
-    //     margin-left: $mb-1-5;
-    //     margin-right: $mb-1-5;
-    //   }
+  .content {
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+    background-color: $body-color;
 
-    .content {
-      grid-template-columns: 116px repeat(2, 1fr);
-      padding-top: 5.5rem;
-      column-gap: 2rem;
-      align-items: center;
-      background-color: $body-color;
+    @include lg {
+      grid-template-columns: 100px repeat(2, 1fr);
+      column-gap: 1.25rem;
+    }
+
+    @include md-l {
+      // grid-template-columns: 0.5fr 3fr;
+      padding-top: 3.5rem;
+    }
+
+    @include md {
+      grid-template-columns: 0.5fr 3fr;
+    }
+
+    .social {
+      display: grid;
+      grid-template-columns: max-content;
+      row-gap: 1rem;
+
+      .icon {
+        font-size: 1.25rem;
+        color: $title-color;
+
+        &:hover {
+          color: $title-color-dark;
+        }
+      }
+    }
+
+    .img {
+      background: url(../../assets/profileimg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      box-shadow: inset 0 0 0 9px rgb(255 255 255/0.3);
+      order: 1;
+      justify-self: center;
+      width: 300px;
+      height: 300px;
+      animation: profile__animate 8s ease-in-out infinite 1s;
 
       @include lg {
-        grid-template-columns: 100px repeat(2, 1fr);
-        column-gap: 1.25rem;
+        width: 250px;
+        height: 250px;
+        box-shadow: inset 0 0 0 8px rgb(255 255 255/0.3);
       }
 
       @include md-l {
-        // grid-template-columns: 0.5fr 3fr;
-        padding-top: 3.5rem;
+        //   order: initial;
+        justify-self: initial;
+        width: 200px;
+        height: 200px;
+        box-shadow: inset 0 0 0 6px rgb(255 255 255/0.3);
       }
 
       @include md {
-        grid-template-columns: 0.5fr 3fr;
+        order: initial;
       }
 
-      .social {
-        display: grid;
-        grid-template-columns: max-content;
-        row-gap: 1rem;
+      @include sm {
+        width: 180px;
+        height: 180px;
+      }
+    }
 
-        .icon {
-          font-size: 1.25rem;
-          color: $title-color;
-
-          &:hover {
-            color: $title-color-dark;
-          }
-        }
+    .data {
+      @include md {
+        grid-column: 1/3;
       }
 
-      .img {
-        background: url(../../assets/profileimg.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: inset 0 0 0 9px rgb(255 255 255/0.3);
-        order: 1;
-        justify-self: center;
-        width: 300px;
-        height: 300px;
-        animation: profile__animate 8s ease-in-out infinite 1s;
-
-        @include lg {
-          width: 250px;
-          height: 250px;
-          box-shadow: inset 0 0 0 8px rgb(255 255 255/0.3);
-        }
-
-        @include md-l {
-          //   order: initial;
-          justify-self: initial;
-          width: 200px;
-          height: 200px;
-          box-shadow: inset 0 0 0 6px rgb(255 255 255/0.3);
-        }
-
-        @include md {
-          order: initial;
-        }
+      .title {
+        font-size: $big-font-size;
+        margin-bottom: $mb-0-25;
 
         @include sm {
-          width: 180px;
-          height: 180px;
+          font-size: 2.25rem;
         }
       }
 
-      .data {
-        @include md {
-          grid-column: 1/3;
-        }
+      .subtitle {
+        position: relative;
+        font-size: $h3-font-size;
+        padding-left: 5.4rem;
+        font-weight: $font-normal;
+        margin-bottom: $mb-1;
 
-        .title {
-          font-size: $big-font-size;
-          margin-bottom: $mb-0-25;
-
-          @include sm {
-            font-size: 2.25rem;
-          }
-        }
-
-        .subtitle {
-          position: relative;
-          font-size: $h3-font-size;
-          padding-left: 5.4rem;
-          font-weight: $font-normal;
+        @include lg {
+          padding-left: 3.75rem;
           margin-bottom: $mb-1;
-
-          @include lg {
-            padding-left: 3.75rem;
-            margin-bottom: $mb-1;
-          }
-
-          &::before {
-            content: "";
-            position: absolute;
-            width: 70px;
-            height: 1px;
-            background-color: $title-color;
-            left: 0;
-            top: 1rem;
-
-            @include lg {
-              width: 42px;
-              top: 0.8rem;
-            }
-          }
         }
 
-        .description {
-          max-width: 400px;
-          margin-bottom: $mb-3;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 70px;
+          height: 1px;
+          background-color: $title-color;
+          left: 0;
+          top: 1rem;
 
           @include lg {
-            max-width: initial;
-            margin-bottom: $mb-2-5;
+            width: 42px;
+            top: 0.8rem;
           }
         }
+      }
 
-        .hello-btn {
-          @include sm {
-            margin: auto;
-            text-align: center;
-            display: block;
-            width: 130px;
-          }
+      .description {
+        max-width: 400px;
+        margin-bottom: $mb-3;
+
+        @include lg {
+          max-width: initial;
+          margin-bottom: $mb-2-5;
+        }
+      }
+
+      .hello-btn {
+        @include sm {
+          margin: auto;
+          text-align: center;
+          display: block;
+          width: 130px;
         }
       }
     }
