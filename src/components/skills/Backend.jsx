@@ -8,16 +8,16 @@ const Backend = () => {
         <div className="box">
           <div className="group">
             <div className="data">
-              <i class="bx bx-badge-check"></i>
+              <i class="bx bxl-nodejs"></i>
               <div>
-                <h3 className="name">Node Js</h3>
+                <h3 className="name">Node JS</h3>
                 <span className="level">Basic</span>
               </div>
             </div>
             <div className="data">
-              <i class="bx bx-badge-check"></i>
+              <i class="bx bxl-mongodb"></i>
               <div>
-                <h3 className="name">PHP</h3>
+                <h3 className="name">MongoDB</h3>
                 <span className="level">Basic</span>
               </div>
             </div>
