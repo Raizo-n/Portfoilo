@@ -46,11 +46,7 @@
         padding: 2rem 0.25rem 4rem;
       }
 
-      .show-menu {
-        @include md-l {
-          bottom: 0;
-        }
-      }
+
 
       .list {
         display: flex;
@@ -113,6 +109,12 @@
             color: $title-color-dark;
           }
         }
+      }
+    }
+
+    .show-menu {
+      @include md-l {
+        bottom: 0;
       }
     }
 
