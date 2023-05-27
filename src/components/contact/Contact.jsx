@@ -81,7 +81,7 @@ const Contact = () => {
                 rows="10"
               ></textarea>
             </div>
-            <button className="button button-flex">Send Message</button>
+            <button className="button button-flex send-btn">Send Message</button>
           </form>
         </div>
       </div>

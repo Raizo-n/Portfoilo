@@ -123,6 +123,13 @@
         resize: none;
       }
     }
+
+    .send-btn {
+      @include sm {
+        display: block;
+        margin: 0 auto;
+      }
+    }
   }
 }
 
