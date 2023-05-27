@@ -74,9 +74,25 @@
           color: $title-color;
           font-weight: $font-medium;
           transition: 0.3s;
+          position: relative;
 
-          &:hover {
-            color: $title-color-dark;
+          &::after {
+            // color: $title-color-dark;
+            // border-bottom: 1px solid #000;
+            // transition: 0.8s ease;
+            color: #000;
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            transform-origin: bottom right;
+            transition: transform .4s ease-out;
+            :hover {
+              transform: scaleX(1);
+              transform-origin: bottom left;
+            }
           }
 
           .active-link {
