@@ -19,7 +19,9 @@ const About = () => {
             officiis? Dolor adipisci commodi, pariatur voluptates molestias
             vitae tenetur vel at fuga.
           </p>
-          <a download='' href='' className="button button--flex">Download CV</a>
+          <a download="" href="" className="button button--flex">
+            Download CV
+          </a>
         </div>
       </div>
     </section>
