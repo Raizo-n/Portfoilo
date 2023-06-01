@@ -81,9 +81,31 @@
       .title {
         font-size: $big-font-size;
         margin-bottom: $mb-0-25;
+        position: relative;
 
         @include sm {
           font-size: 2.25rem;
+        }
+
+        .hand-icon {
+          position: absolute;
+          top: 1px;
+          width: 4rem;
+          height: 4rem;
+          margin-left: 0.4rem;
+
+          @include md-l {
+            top: 60px;
+          }
+
+          @include md {
+            top: 10px;
+            width: 3rem;
+            height:3rem;
+          }
+
+          @include sm {
+          }
         }
       }
 
