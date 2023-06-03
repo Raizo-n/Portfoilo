@@ -33,10 +33,10 @@ const Works = () => {
                 </p>
                 <p className="tech-title">
                   Technology
-                  <i className="item">React</i>
-                  <i className="item">SCSS</i>
-                  <i className="item">Node.js</i>
-                  <i className="item">MySQL</i>
+                  <span className="item">React</span>
+                  <span className="item">SCSS</span>
+                  <span className="item">Node.js</span>
+                  <span className="item">MySQL</span>
                 </p>
               </div>
             </div>
