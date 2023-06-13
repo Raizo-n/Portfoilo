@@ -30,8 +30,8 @@ const Header = () => {
               </a>
             </li>
             <li className="item">
-              <a href="#portfolio" className="link">
-                <i className="uil uil-scenery icon"></i> Portfolio
+              <a href="#project" className="link">
+                <i className="uil uil-scenery icon"></i> Project
               </a>
             </li>
             <li className="item">

@@ -5,7 +5,7 @@ const Footer = () => {
   const menuArr = [
     { menu: "About", link: "#about" },
     { menu: "Skills", link: "#skills" },
-    { menu: "Project", link: "#portfolio" },
+    { menu: "Project", link: "#project" },
     { menu: "Contact", link: "#contact" },
   ];
 
