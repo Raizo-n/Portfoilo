@@ -19,11 +19,10 @@ const Works = () => {
                 View More... <i className="bx bx-right-arrow-alt icon"></i>
               </a>
             </div>
-
             <div className="modal">
               <div className="content">
-                <img src={item.image} alt="" className="img" />
                 <i className="uil uil-times close-icon"></i>
+                <img src={item.image} alt="" className="img" />
                 <h3 className="title">{item.title}</h3>
                 <p className="project-desc">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -31,13 +30,13 @@ const Works = () => {
                   mollitia harum dolorum quis et aut dolor inventore repellat
                   quo molestias consectetur commodi.
                 </p>
-                <p className="tech-title">
-                  Technology
+                <div className="skill">
+                  <span className="tech-title">Technology</span>
                   <span className="item">React</span>
                   <span className="item">SCSS</span>
                   <span className="item">Node.js</span>
                   <span className="item">MySQL</span>
-                </p>
+                </div>
               </div>
             </div>
           </>

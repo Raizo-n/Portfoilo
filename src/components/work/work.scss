@@ -81,5 +81,50 @@
         }
       }
     }
+
+    .modal {
+      width: 600px;
+      background-color: $container-color;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 1.25rem;
+      border-radius: 1rem;
+      // display: none;
+
+      .img {
+        width: 100%;
+      }
+
+      .close-icon {
+        cursor: pointer;
+        font-size: $h1-font-size;
+        padding: 0.2rem;
+        background-color: $title-color;
+        color: $container-color;
+
+        border: 1px solid $text-color;
+        border-radius: 10%;
+        // margin-bottom: $mb-2;
+      }
+    }
+
+    .title {
+      margin: 0.8rem 0;
+    }
+
+    .skill {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.8rem;
+
+      .tech-title {
+        font-weight: $font-semi-bold;
+      }
+
+      .item {
+        border: 1px solid black;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.5rem;
+      }
+    }
   }
 }
