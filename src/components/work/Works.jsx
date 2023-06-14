@@ -7,6 +7,7 @@ const Works = () => {
       {projectData.map((item) => {
         return (
           <>
+          {/* Card */}
             <div className="card" key={item.id}>
               <div className="img-box">
                 <img src={item.image} alt="" className="img" />
@@ -19,6 +20,7 @@ const Works = () => {
                 View More... <i className="bx bx-right-arrow-alt icon"></i>
               </a>
             </div>
+            {/* modal */}
             <div className="modal">
               <div className="content">
                 <i className="uil uil-times close-icon"></i>
