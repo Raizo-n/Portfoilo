@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { projectData } from "./Data";
 
 const Works = () => {
+  const [toggleState, setToggleState] = useState(0)
+
+  const toggleTag = (index) => {
+    setToggleState(index)
+  }
+
   return (
     <div className="container grid">
       {projectData.map((item) => {
@@ -16,14 +22,14 @@ const Works = () => {
               <a href="#" className="work-button">
                 Demo <i className="bx bx-right-arrow-alt icon"></i>
               </a>
-              <a href="#" className="work-button">
+              <a href="#" className="work-button" onClick={()=>toggleTag(1)}>
                 View More... <i className="bx bx-right-arrow-alt icon"></i>
               </a>
             </div>
             {/* modal */}
-            <div className="modal">
+            <div className={toggleState === 1 ? "modal active-modal" : 'modal'} >
               <div className="content">
-                <i className="uil uil-times close-icon"></i>
+                <i className="uil uil-times close-icon" onClick={()=>toggleTag(0)}></i>
                 <img src={item.image} alt="" className="img" />
                 <h3 className="title">{item.title}</h3>
                 <p className="project-desc">
