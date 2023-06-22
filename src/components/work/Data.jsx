@@ -25,3 +25,12 @@ export const projectData = [
         title: 'Web design',
     },
 ]
+
+export const work1 = [
+    {
+        image: Work1,
+        title: 'Web design',
+        skill: ['React', 'SCSS', 'Node.js', 'MySQL'],
+        desc: 'lorem akjsfgld;aafdhalsj;dfg gnja'
+    }
+]
