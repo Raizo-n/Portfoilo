@@ -5,7 +5,7 @@
     border-top: 1px solid rgba(0,0,0,0.1);
 
     .container {
-        padding: 2rem 0 6rem;
+        padding: 2rem 0;
 
         .title {
             color: $title-color;
@@ -31,7 +31,7 @@
 
         .copy {
             display: block;
-            margin-top: 4.5rem;
+            // margin-top: 4.5rem;
             color: $title-color;
             text-align: center;
             font-size: $smaller-font-size;
