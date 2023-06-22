@@ -3,7 +3,7 @@ import "./header.scss";
 
 const Header = () => {
   /*-------- Change Background Header --------*/
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     // when the scroll is higher than 200 viewport height,
     // add the scroll-header class to a tag with the header tag
@@ -33,38 +33,9 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="logo">
-          Raizo
-        </a>
+        <a href="index.html" className="logo">Raizo</a>
         <div className={Toggle ? "menu show-menu" : "menu"}>
-          <ul className="list grid">
-            {menu}
-            {/* <li className="item">
-              <a href="#home" className="link">
-                <i className="uil uil-estate icon active-link"></i> Home
-              </a>
-            </li>
-            <li className="item">
-              <a href="#about" className="link">
-                <i className="uil uil-user icon"></i> About
-              </a>
-            </li>
-            <li className="item">
-              <a href="#skills" className="link">
-                <i className="uil uil-file icon"></i> Skills
-              </a>
-            </li>
-            <li className="item">
-              <a href="#project" className="link">
-                <i className="uil uil-scenery icon"></i> Project
-              </a>
-            </li>
-            <li className="item">
-              <a href="#contact" className="link">
-                <i className="uil uil-message icon"></i> Contact
-              </a>
-            </li> */}
-          </ul>
+          <ul className="list grid">{menu}</ul>
           <i class="uil uil-times close" onClick={() => showMenu(!Toggle)}></i>
         </div>
 
