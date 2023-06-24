@@ -2,9 +2,24 @@ import React, { useState } from "react";
 import "./header.scss";
 
 const Header = () => {
-
   // Toggle Menu
   const [Toggle, showMenu] = useState(false);
+
+  const menuArr = [
+    { menu: "Home", link: "#home" },
+    { menu: "About", link: "#about" },
+    { menu: "Skills", link: "#skills" },
+    { menu: "Project", link: "#project" },
+    { menu: "Contact", link: "#contact" },
+  ];
+
+  const menu = menuArr.map((item) => (
+    <li className="item">
+      <a href={item.link} className="link">
+        <i className="uil uil-estate icon active-link"></i> {item.menu}
+      </a>
+    </li>
+  ));
 
   return (
     <header className="header">
@@ -14,7 +29,8 @@ const Header = () => {
         </a>
         <div className={Toggle ? "menu show-menu" : "menu"}>
           <ul className="list grid">
-            <li className="item">
+            {menu}
+            {/* <li className="item">
               <a href="#home" className="link">
                 <i className="uil uil-estate icon active-link"></i> Home
               </a>
@@ -38,7 +54,7 @@ const Header = () => {
               <a href="#contact" className="link">
                 <i className="uil uil-message icon"></i> Contact
               </a>
-            </li>
+            </li> */}
           </ul>
           <i class="uil uil-times close" onClick={() => showMenu(!Toggle)}></i>
         </div>
