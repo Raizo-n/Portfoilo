@@ -7,7 +7,7 @@ const Works = () => {
 
   const toggleTab = (index) => setToggleState(index);
   return (
-    <div className="container grid">
+    <div className="work-container grid">
       <div className="work-content">
         {/* Card */}
         <div className="card">
@@ -65,7 +65,7 @@ const Works = () => {
           <div className="content">
             <i
               className="uil uil-times close-icon"
-              onClick={() => toggleTag(0)}
+              onClick={() => toggleTab(0)}
             ></i>
             <img src={Work1} alt="" className="img" />
             <h3 className="title">Social App</h3>
@@ -95,7 +95,7 @@ const Works = () => {
           <a href="#" className="work-button">
             Demo <i className="bx bx-right-arrow-alt icon"></i>
           </a>
-          <div className="work-button" onClick={() => toggleTag(3)}>
+          <div className="work-button" onClick={() => toggleTab(3)}>
             View More... <i className="bx bx-right-arrow-alt icon"></i>
           </div>
         </div>
@@ -104,7 +104,7 @@ const Works = () => {
           <div className="content">
             <i
               className="uil uil-times close-icon"
-              onClick={() => toggleTag(0)}
+              onClick={() => toggleTab(0)}
             ></i>
             <img src={Work1} alt="" className="img" />
             <h3 className="title">Web Design</h3>
@@ -133,7 +133,7 @@ const Works = () => {
           <a href="#" className="work-button">
             Demo <i className="bx bx-right-arrow-alt icon"></i>
           </a>
-          <div className="work-button" onClick={() => toggleTag(4)}>
+          <div className="work-button" onClick={() => toggleTab(4)}>
             View More... <i className="bx bx-right-arrow-alt icon"></i>
           </div>
         </div>
@@ -142,7 +142,7 @@ const Works = () => {
           <div className="content">
             <i
               className="uil uil-times close-icon"
-              onClick={() => toggleTag(0)}
+              onClick={() => toggleTab(0)}
             ></i>
             <img src={Work1} alt="" className="img" />
             <h3 className="title">E-commerce</h3>
