@@ -15,17 +15,17 @@ const Header = () => {
   const [Toggle, showMenu] = useState(false);
 
   const menuArr = [
-    { menu: "Home", link: "#home" },
-    { menu: "About", link: "#about" },
-    { menu: "Skills", link: "#skills" },
-    { menu: "Project", link: "#project" },
-    { menu: "Contact", link: "#contact" },
+    { menu: "Home", link: "#home", icon: 'uil uil-estate icon active-link' },
+    { menu: "About", link: "#about", icon: 'uil uil-user-circle icon active-link' },
+    { menu: "Skills", link: "#skills", icon: 'uil uil-thumbs-up icon active-link'},
+    { menu: "Project", link: "#project", icon: 'uil uil-window icon active-link' },
+    { menu: "Contact", link: "#contact", icon: 'uil uil-envelope icon active-link' },
   ];
 
   const menu = menuArr.map((item) => (
     <li className="item">
       <a href={item.link} className="link">
-        <i className="uil uil-estate icon active-link"></i> {item.menu}
+        <i className={item.icon}></i> {item.menu}
       </a>
     </li>
   ));
