@@ -1,6 +1,6 @@
 @import "../../App.scss";
 
-// .work {
+.work {
   .work-container {
     grid-template-columns: repeat(2, max-content);
     gap: 3rem;
@@ -122,6 +122,8 @@
 
           @include md {
             // padding: 4.5rem 1.5rem 2.5rem;
+            width: 90%;
+            padding: 1.5rem;
           }
 
           .close-icon {
@@ -135,7 +137,10 @@
             margin-bottom: $mb-0-5;
             border: 1px solid $text-color;
             border-radius: 10%;
-            // margin-bottom: $mb-2;
+
+            @include md {
+              font-size: $h2-font-size;
+            }
           }
 
           .img {
@@ -146,10 +151,22 @@
             margin: 0.8rem 0;
           }
 
+          .project-desc {
+            @include md {
+              font-size: $small-font-size;
+            }
+          }
+
           .skill {
             display: flex;
             gap: 1rem;
             margin-top: 0.8rem;
+            align-items: center;
+            flex-wrap: wrap;
+
+            @include md {
+              font-size: $small-font-size;
+            }
 
             .tech-title {
               font-weight: $font-semi-bold;
@@ -169,4 +186,4 @@
       }
     }
   }
-// }
+}
