@@ -11,21 +11,21 @@ const Backend = () => {
               <i class="bx bxl-nodejs"></i>
               <div>
                 <h3 className="name">Node JS</h3>
-                <span className="level">Basic</span>
+                {/* <span className="level">Basic</span> */}
               </div>
             </div>
             <div className="data">
               <i class="bx bxl-mongodb"></i>
               <div>
                 <h3 className="name">MongoDB</h3>
-                <span className="level">Basic</span>
+                {/* <span className="level">Basic</span> */}
               </div>
             </div>
             <div className="data">
               <i class="bx bx-badge-check"></i>
               <div>
                 <h3 className="name">My SQL</h3>
-                <span className="level">Basic</span>
+                {/* <span className="level">Basic</span> */}
               </div>
             </div>
           </div>
