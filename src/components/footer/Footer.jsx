@@ -10,7 +10,7 @@ const Footer = () => {
   ];
 
   const menu = menuArr.map((item) => (
-    <li>
+    <li key={item.menu}>
       <a href={item.link} className="link">
         {item.menu}
       </a>

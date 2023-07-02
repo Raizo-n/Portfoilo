@@ -23,7 +23,7 @@ const Header = () => {
   ];
 
   const menu = menuArr.map((item) => (
-    <li className="item">
+    <li className="item" key={item.menu}>
       <a href={item.link} className="link">
         <i className={item.icon}></i> {item.menu}
       </a>
