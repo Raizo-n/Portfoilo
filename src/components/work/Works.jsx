@@ -21,6 +21,9 @@ const Works = () => {
           <div className="work-button" onClick={() => toggleTab(1)}>
             View More... <i className="bx bx-right-arrow-alt icon"></i>
           </div>
+          <a href="https://github.com/Raizo-n" className="work-button">
+            <i className="uil uil-github git-icon"></i> GitHub
+          </a>
         </div>
         {/* modal */}
         <div className={toggleState === 1 ? "modal active-modal" : "modal"}>
@@ -59,6 +62,9 @@ const Works = () => {
           <div className="work-button" onClick={() => toggleTab(2)}>
             View More... <i className="bx bx-right-arrow-alt icon"></i>
           </div>
+          <a href="https://github.com/Raizo-n" className="work-button">
+            <i className="uil uil-github git-icon"></i> GitHub
+          </a>
         </div>
         {/* modal */}
         <div className={toggleState === 2 ? "modal active-modal" : "modal"}>
@@ -98,6 +104,9 @@ const Works = () => {
           <div className="work-button" onClick={() => toggleTab(3)}>
             View More... <i className="bx bx-right-arrow-alt icon"></i>
           </div>
+          <a href="https://github.com/Raizo-n" className="work-button">
+            <i className="uil uil-github git-icon"></i> GitHub
+          </a>
         </div>
         {/* modal */}
         <div className={toggleState === 3 ? "modal active-modal" : "modal"}>
@@ -136,6 +145,9 @@ const Works = () => {
           <div className="work-button" onClick={() => toggleTab(4)}>
             View More... <i className="bx bx-right-arrow-alt icon"></i>
           </div>
+          <a href="https://github.com/Raizo-n" className="work-button">
+            <i className="uil uil-github git-icon"></i> GitHub
+          </a>
         </div>
         {/* modal */}
         <div className={toggleState === 4 ? "modal active-modal" : "modal"}>
