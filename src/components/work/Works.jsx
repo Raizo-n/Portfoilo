@@ -15,6 +15,7 @@ const Works = () => {
             <img src={Work1} alt="" className="img" />
           </div>
           <h3 className="title">Web Design</h3>
+          <div className="flex-box">
           <a href="#" className="work-button">
             Demo <i className="bx bx-right-arrow-alt icon"></i>
           </a>
@@ -24,6 +25,7 @@ const Works = () => {
           <a href="https://github.com/Raizo-n" className="work-button">
             <i className="uil uil-github git-icon"></i> GitHub
           </a>
+          </div>
         </div>
         {/* modal */}
         <div className={toggleState === 1 ? "modal active-modal" : "modal"}>
