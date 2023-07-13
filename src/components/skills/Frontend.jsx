@@ -1,16 +1,19 @@
 import React from "react";
 
 const Frontend = () => {
-  const frontEndSkillArr = [
+  const frontEndSkillArr1 = [
     { icon: "bx bxl-html5", skill: "HTML" },
     { icon: "bx bxl-css3", skill: "CSS" },
-    { icon: "bx bxl-html5", skill: "JavaScript" },
-    { icon: "bx bxl-html5", skill: "React" },
-    { icon: "bx bxl-html5", skill: "Git" },
-    { icon: "bx bxl-html5", skill: "Tailwind" },
+    { icon: "bx bxl-javascript", skill: "JavaScript" },
   ];
 
-  const frontEndSkill = frontEndSkillArr.map((item) => (
+  const frontEndSkillArr2 = [
+    { icon: "bx bxl-react", skill: "React" },
+    { icon: "bx bxl-git", skill: "Git" },
+    { icon: "bx bxl-tailwind-css", skill: "Tailwind" },
+  ];
+
+  const frontEndSkill1 = frontEndSkillArr1.map((item) => (
     <div className="data">
       <i class={item.icon}></i>
       <div>
@@ -18,57 +21,22 @@ const Frontend = () => {
       </div>
     </div>
   ));
-  
+
+  const frontEndSkill2 = frontEndSkillArr2.map((item) => (
+    <div className="data">
+      <i class={item.icon}></i>
+      <div>
+        <h3 className="name">{item.skill}</h3>
+      </div>
+    </div>
+  ));
+
   return (
     <div className="content">
       <h3 className="title">Front-end skills</h3>
       <div className="box">
-        <div className="group">
-          <div className="data">
-            <i class="bx bxl-html5"></i>
-            <div>
-              <h3 className="name">HTML</h3>
-              <span className="level">Basic</span>
-            </div>
-          </div>
-          <div className="data">
-            <i class="bx bxl-css3"></i>
-            <div>
-              <h3 className="name">CSS</h3>
-              <span className="level">Basic</span>
-            </div>
-          </div>
-          <div className="data">
-            <i class="bx bxl-javascript"></i>
-            <div>
-              <h3 className="name">JavaScript</h3>
-              <span className="level">Advanced</span>
-            </div>
-          </div>
-        </div>
-        <div className="group">
-          <div className="data">
-            <i class="bx bxl-react"></i>
-            <div>
-              <h3 className="name">React</h3>
-              <span className="level">Basic</span>
-            </div>
-          </div>
-          <div className="data">
-            <i class="bx bxl-git"></i>
-            <div>
-              <h3 className="name">Git</h3>
-              <span className="level">Basic</span>
-            </div>
-          </div>
-          <div className="data">
-            <i class="bx bxl-tailwind-css"></i>
-            <div>
-              <h3 className="name">Tailwind</h3>
-              <span className="level">Basic</span>
-            </div>
-          </div>
-        </div>
+        <div className="group">{frontEndSkill1}</div>
+        <div className="group">{frontEndSkill2}</div>
       </div>
     </div>
   );
