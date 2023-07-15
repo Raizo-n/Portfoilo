@@ -48,10 +48,7 @@ const Works = () => {
             <img src={WebDesignImg} alt="" className="img" />
             <h3 className="title">Web Design</h3>
             <p className="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos
-              aspernatur amet quibusdam, rem velit repellendus ut mollitia harum
-              dolorum quis et aut dolor inventore repellat quo molestias
-              consectetur commodi.
+              I created a web site for a gym using hamburger menu, carousel, and accordion.
             </p>
             <div className="skill">
               <span className="tech-title">Technology</span>
