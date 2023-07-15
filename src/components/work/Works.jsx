@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { projectData } from "./Data";
 import Work1 from "../../assets/Screenshot (62).png";
+import WebDesignImg from "../../assets/MuscleGym-WebSite.png";
+
 
 const Works = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -12,11 +14,11 @@ const Works = () => {
         {/* Card */}
         <div className="card">
           <div className="img-box">
-            <img src={Work1} alt="" className="img" />
+            <img src={WebDesignImg} alt="" className="img" />
           </div>
           <h3 className="title">Web Design</h3>
           <div className="flex-box">
-          <a href="#" className="work-button">
+          <a href="https://web-dev2-final-project.vercel.app/" className="work-button">
             Demo <i className="bx bx-right-arrow-alt icon"></i>
           </a>
           <div className="work-button" onClick={() => toggleTab(1)}>
