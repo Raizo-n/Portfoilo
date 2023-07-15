@@ -59,7 +59,7 @@ const Works = () => {
         </div>
       </div>
 
-      {/* Social App */}
+      {/* Social App *not yet*/}
       <div className="work-content">
         {/* Card */}
         <div className="card">
