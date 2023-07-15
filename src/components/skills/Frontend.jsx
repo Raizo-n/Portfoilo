@@ -1,12 +1,30 @@
 import React from "react";
 
 const Frontend = () => {
+  const frontEndSkillArr = [
+    { icon: "bx bxl-html5", skill: "HTML" },
+    { icon: "bx bxl-css3", skill: "CSS" },
+    { icon: "bx bxl-html5", skill: "JavaScript" },
+    { icon: "bx bxl-html5", skill: "React" },
+    { icon: "bx bxl-html5", skill: "Git" },
+    { icon: "bx bxl-html5", skill: "Tailwind" },
+  ];
+
+  const frontEndSkill = frontEndSkillArr.map((item) => (
+    <div className="data">
+      <i class={item.icon}></i>
+      <div>
+        <h3 className="name">{item.skill}</h3>
+      </div>
+    </div>
+  ));
+  
   return (
     <div className="content">
       <h3 className="title">Front-end skills</h3>
       <div className="box">
         <div className="group">
-            <div className="data">
+          <div className="data">
             <i class="bx bxl-html5"></i>
             <div>
               <h3 className="name">HTML</h3>
@@ -32,7 +50,7 @@ const Frontend = () => {
           <div className="data">
             <i class="bx bxl-react"></i>
             <div>
-              <h3  className="name">React</h3>
+              <h3 className="name">React</h3>
               <span className="level">Basic</span>
             </div>
           </div>
