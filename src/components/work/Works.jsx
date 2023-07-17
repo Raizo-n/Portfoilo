@@ -6,14 +6,12 @@ import WebDesignImg from "../../assets/MuscleGym-WebSite.png";
 import MovieAppImg from "../../assets/Movie-App.png";
 import WeatherAppImg from "../../assets/WeatherApp.png";
 
-
 const Works = () => {
   const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (index) => setToggleState(index);
   return (
     <div className="work-container grid">
-
       {/* Web Design */}
       <div className="work-content">
         {/* Card */}
@@ -23,15 +21,21 @@ const Works = () => {
           </div>
           <h3 className="title">Web Design</h3>
           <div className="flex-box">
-          <a href="https://web-dev2-final-project.vercel.app/" className="work-button">
-            Demo <i className="bx bx-right-arrow-alt icon"></i>
-          </a>
-          <div className="work-button" onClick={() => toggleTab(1)}>
-            View More... <i className="bx bx-right-arrow-alt icon"></i>
-          </div>
-          <a href="https://github.com/Raizo-n/WebDev2_FinalProject" className="work-button">
-            <i className="uil uil-github git-icon"></i> GitHub
-          </a>
+            <a
+              href="https://web-dev2-final-project.vercel.app/"
+              className="work-button"
+            >
+              Demo <i className="bx bx-right-arrow-alt icon"></i>
+            </a>
+            <div className="work-button" onClick={() => toggleTab(1)}>
+              View More... <i className="bx bx-right-arrow-alt icon"></i>
+            </div>
+            <a
+              href="https://github.com/Raizo-n/WebDev2_FinalProject"
+              className="work-button"
+            >
+              <i className="uil uil-github git-icon"></i> GitHub
+            </a>
           </div>
         </div>
         {/* modal */}
@@ -111,13 +115,19 @@ const Works = () => {
             <img src={MovieAppImg} alt="" className="img" />
           </div>
           <h3 className="title">Movie App</h3>
-          <a href="https://react-redux-final-project.vercel.app/" className="work-button">
+          <a
+            href="https://react-redux-final-project.vercel.app/"
+            className="work-button"
+          >
             Demo <i className="bx bx-right-arrow-alt icon"></i>
           </a>
           <div className="work-button" onClick={() => toggleTab(3)}>
             View More... <i className="bx bx-right-arrow-alt icon"></i>
           </div>
-          <a href="https://github.com/Raizo-n/React-Redux_FinalProject" className="work-button">
+          <a
+            href="https://github.com/Raizo-n/React-Redux_FinalProject"
+            className="work-button"
+          >
             <i className="uil uil-github git-icon"></i> GitHub
           </a>
         </div>
@@ -154,13 +164,19 @@ const Works = () => {
             <img src={WeatherAppImg} alt="" className="img" />
           </div>
           <h3 className="title">Weather App</h3>
-          <a href="https://weather-app-eta-gilt.vercel.app/" className="work-button">
+          <a
+            href="https://weather-app-eta-gilt.vercel.app/"
+            className="work-button"
+          >
             Demo <i className="bx bx-right-arrow-alt icon"></i>
           </a>
           <div className="work-button" onClick={() => toggleTab(4)}>
             View More... <i className="bx bx-right-arrow-alt icon"></i>
           </div>
-          <a href="https://github.com/Raizo-n/React-weatherApp" className="work-button">
+          <a
+            href="https://github.com/Raizo-n/React-weatherApp"
+            className="work-button"
+          >
             <i className="uil uil-github git-icon"></i> GitHub
           </a>
         </div>
