@@ -5,7 +5,7 @@ const Backend = () => {
   const backEndSkillArr1 = [
     { icon: "bx bxl-nodejs", skill: "Node JS" },
     { icon: "bx bxl-mongodb", skill: "MongoDB" },
-    { icon: "bx bxl-badge-check", skill: "MySQL" },
+    { icon: "bx bxs-badge-check", skill: "MySQL" },
   ];
 
   return (
