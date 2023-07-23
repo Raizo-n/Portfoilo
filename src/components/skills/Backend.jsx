@@ -12,7 +12,9 @@ const Backend = () => {
     <div className="content">
       <h3 className="title">Back-end skills</h3>
       <div className="box">
-        <div className="group"><DisplaySkill skillSet={backEndSkillArr1}></DisplaySkill></div>
+        <div className="group">
+          <DisplaySkill skillSet={backEndSkillArr1} />
+        </div>
       </div>
     </div>
   );

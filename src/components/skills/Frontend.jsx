@@ -14,24 +14,6 @@ const Frontend = () => {
     { icon: "bx bxl-tailwind-css", skill: "Tailwind" },
   ];
 
-  // const frontEndSkill1 = frontEndSkillArr1.map((item) => (
-  //   <div className="data">
-  //     <i class={item.icon}></i>
-  //     <div>
-  //       <h3 className="name">{item.skill}</h3>
-  //     </div>
-  //   </div>
-  // ));
-
-  // const frontEndSkill2 = frontEndSkillArr2.map((item) => (
-  //   <div className="data">
-  //     <i class={item.icon}></i>
-  //     <div>
-  //       <h3 className="name">{item.skill}</h3>
-  //     </div>
-  //   </div>
-  // ));
-
   return (
     <div className="content">
       <h3 className="title">Front-end skills</h3>
@@ -42,8 +24,6 @@ const Frontend = () => {
         <div className="group">
           <DisplaySkill skillSet={frontEndSkillArr2} />
         </div>
-        {/* <div className="group">{frontEndSkill1}</div>
-        <div className="group">{frontEndSkill2}</div> */}
       </div>
     </div>
   );
