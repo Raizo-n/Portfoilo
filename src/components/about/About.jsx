@@ -14,10 +14,10 @@ const About = () => {
         <div className="data">
           {/* <Info /> */}
           <p className="description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-            natus esse aspernatur, quibusdam neque quisquam dolor unde beatae
-            officiis? Dolor adipisci commodi, pariatur voluptates molestias
-            vitae tenetur vel at fuga.
+            My name is "Raizo Nakada". I am a Japanese Front-end Developer, currently living in Vancouver Canada.
+            I am good at making steady efforts toward my goals.
+            Since nothing happens overnight, especially programming,
+            so I keep learning about it step by step and also enjoy the journey of programming.
           </p>
           <a download="" href="" className="button button--flex">
             Download CV
