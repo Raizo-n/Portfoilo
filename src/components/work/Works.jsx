@@ -187,7 +187,7 @@ const Works = () => {
             <img src={WeatherAppImg} alt="" className="img" />
             <h3 className="title">Weather App</h3>
             <p className="project-desc">
-              You can search for the big city, which is more than one million people in the world, and get the weather forecast for it.
+              You can search for the big city, which population is more than one million people in the world, and get the weather forecast for it.
               By hitting the accordion on the weekly forecast section, you can get more detailed information of the day.
               I built this app using OpenWeatherMap API and GeoDB API with places autocomplete. Also, I used two packages,
               react-select and react-assemble.
