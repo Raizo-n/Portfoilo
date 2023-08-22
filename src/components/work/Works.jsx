@@ -187,17 +187,15 @@ const Works = () => {
             <img src={WeatherAppImg} alt="" className="img" />
             <h3 className="title">Weather App</h3>
             <p className="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos
-              aspernatur amet quibusdam, rem velit repellendus ut mollitia harum
-              dolorum quis et aut dolor inventore repellat quo molestias
-              consectetur commodi.
+              You can search for the big city, which is more than one million people in the world, and get the weather forecast for it.
+              By hitting the accordion on the weekly forecast section, you can get more detailed information of the day.
+              I built this app using OpenWeatherMap API and GeoDB API with places autocomplete. Also, I used two packages,
+              react-select and react-assemble.
             </p>
             <div className="skill">
               <span className="tech-title">Technology</span>
+              <span className="item">CSS</span>
               <span className="item">React</span>
-              <span className="item">SCSS</span>
-              <span className="item">Node.js</span>
-              <span className="item">MongoDB</span>
             </div>
           </div>
         </div>
