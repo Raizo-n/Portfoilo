@@ -23,9 +23,9 @@ const Works = () => {
           <div className="flex-box">
             <a
               href="https://web-dev2-final-project.vercel.app/"
-              className="work-button"
+              className="work-button demo-button"
             >
-              Demo <i className="bx bx-right-arrow-alt icon"></i>
+              Demo
             </a>
             <div className="work-button" onClick={() => toggleTab(1)}>
               View More... <i className="bx bx-right-arrow-alt icon"></i>
