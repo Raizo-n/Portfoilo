@@ -79,8 +79,10 @@
         .flex-box {
           display: flex;
           align-items: center;
-          justify-content: space-between;
-          // justify-content: space-evenly;
+          // justify-content: space-between;
+          justify-content: space-evenly;
+          gap: 0.5rem;
+          padding-top: $mb-1;
 
           .work-button {
             color: $text-color;
@@ -100,16 +102,25 @@
               font-size: 1rem;
               transition: 0.4s;
             }
+
+            .demo-button{
+              background-color: antiquewhite;
+              padding: $mb-0-25 $mb-0-5;
+              border-radius: 0.5rem;
+            }
           }
 
           .git-icon {
             font-size: 1rem;
           }
         }
+
         .work-button {
           color: $text-color;
           font-size: $small-font-size;
-          display: flex;
+          // display: flex;
+          // display: inline-block;
+          // background-color: red;
           align-items: center;
           column-gap: 0.25rem;
           cursor: pointer;
