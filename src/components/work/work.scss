@@ -69,6 +69,7 @@
           font-size: $normal-font-size;
           font-weight: $font-medium;
           margin-bottom: $mb-0-5;
+          // margin-top: $mb-0-5;
           text-align: center;
 
           @include lg {
@@ -103,11 +104,21 @@
               transition: 0.4s;
             }
           }
-          
+
           .demo-button {
-            background-color: antiquewhite;
-            padding: $mb-0-25 $mb-0-5;
+            background: antiquewhite;
+            padding: 0.4rem 0.8rem;
             border-radius: 0.5rem;
+
+            background-color: $title-color;
+            color: $container-color;
+
+            &:hover {
+              background: $title-color-dark;
+            }
+            // @include lg {
+            //   padding: 1rem 1.75rem;
+            // }
           }
 
           .git-icon {

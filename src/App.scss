@@ -38,6 +38,8 @@ $header-height: 3rem;
 $title-color: hsl(0, 0%, 20%);
 $title-color-dark: hsl(0, 0%, 50%);
 $text-color: hsl(0, 0%, 46%);
+// $text-color: rgb(222, 255, 123);
+// $body-color: hsl(0, 0%, 98%);
 $body-color: hsl(0, 0%, 98%);
 $container-color: #fff;
 
@@ -156,6 +158,8 @@ img {
 .section_title {
   font-size: $h1-font-size;
   color: $title-color;
+
+  
 }
 
 .section_subtitle {

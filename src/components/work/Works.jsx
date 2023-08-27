@@ -23,7 +23,8 @@ const Works = () => {
           <div className="flex-box">
             <a
               href="https://web-dev2-final-project.vercel.app/"
-              className="work-button demo-button"
+              className="demo-button"
+              // className="work-button demo-button button"
             >
               Demo
             </a>
@@ -48,7 +49,8 @@ const Works = () => {
             <img src={WebDesignImg} alt="" className="img" />
             <h3 className="title">Web Design</h3>
             <p className="project-desc">
-              I created a web site for a gym using hamburger menu, carousel, and accordion.
+              I created a web site for a gym using hamburger menu, carousel, and
+              accordion.
             </p>
             <div className="skill">
               <span className="tech-title">Technology</span>
@@ -138,9 +140,9 @@ const Works = () => {
             <img src={MovieAppImg} alt="" className="img" />
             <h3 className="title">Movie App</h3>
             <p className="project-desc">
-              This app allows you to search for a movie or show.
-              You can get detailed information of it by clicking each movie or show image.
-              I built this app using OMDb API.
+              This app allows you to search for a movie or show. You can get
+              detailed information of it by clicking each movie or show image. I
+              built this app using OMDb API.
             </p>
             <div className="skill">
               <span className="tech-title">Technology</span>
@@ -185,11 +187,12 @@ const Works = () => {
             <img src={WeatherAppImg} alt="" className="img" />
             <h3 className="title">Weather App</h3>
             <p className="project-desc">
-              You can search for the big city, which population is more than one million people in the world,
-              and get the weather forecast for it.
-              By hitting the accordion on the weekly forecast section, you can get more detailed information of the day.
-              I built this app using OpenWeatherMap API and GeoDB API with places autocomplete. Also, I used two packages,
-              react-select and react-assemble.
+              You can search for the big city, which population is more than one
+              million people in the world, and get the weather forecast for it.
+              By hitting the accordion on the weekly forecast section, you can
+              get more detailed information of the day. I built this app using
+              OpenWeatherMap API and GeoDB API with places autocomplete. Also, I
+              used two packages, react-select and react-assemble.
             </p>
             <div className="skill">
               <span className="tech-title">Technology</span>
