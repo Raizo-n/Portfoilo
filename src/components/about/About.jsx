@@ -6,8 +6,8 @@ import AboutImg from "../../assets/MyImg.jpg";
 
 const About = () => {
   return (
-    <section className="about section" id="about">
-      <h2 className="section_title">About me</h2>
+    <section className="about section container" id="about">
+      <h2 className="section_title"><span className='title-span'>About me</span></h2>
       <span className="section_subtitle">My introduction</span>
       <div className="container about_container grid">
         <img src={AboutImg} alt="" className="img" />
